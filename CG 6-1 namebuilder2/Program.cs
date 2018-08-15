@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace CG_6_1_namebuilder2
 {
@@ -27,10 +28,10 @@ namespace CG_6_1_namebuilder2
         /// <param name="firstName"></param>
         /// <param name="lastName"></param>
         /// <returns>user entered first name + user entered last name in one string</returns>
-        private static System.Text.StringBuilder FullName(string firstName, string lastName)
+        private static StringBuilder FullName(string firstName, string lastName)
         {
-            //had to use system.text.stringbuilder to make it work
-            System.Text.StringBuilder nameCombined = new System.Text.StringBuilder(firstName + " " + lastName);
+            
+            StringBuilder nameCombined = new StringBuilder(firstName + " " + lastName);
             return nameCombined;
 
         }
